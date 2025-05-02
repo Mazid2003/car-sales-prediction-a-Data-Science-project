@@ -56,11 +56,10 @@ car-sales-predictor/
 ├── static/
 ├── templates/
 │   └── index.html
-├── model/
-│   ├── sales_prediction_model.pkl
-│   ├── scaler.pkl
-│   ├── gender_encoder.pkl
-│   └── country_encoder.pkl
+├── sales_prediction_model.pkl
+├── scaler.pkl
+├── gender_encoder.pkl
+├── country_encoder.pkl
 ├── app.py
 ├── requirements.txt
 └── README.md
