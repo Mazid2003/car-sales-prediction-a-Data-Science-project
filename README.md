@@ -67,7 +67,27 @@ car-sales-predictor/
 
 **📊 Sample Output**
 
-Input: Male, USA, Age 45, Salary $85,000, Credit Card Debt $10,000, Net Worth $200,000Predicted Car Purchase Amount: $58,540.30
+Input: Male, USA, Age 45, Salary $85,000, Credit Card Debt $10,000, Net Worth $200,000
+
+Predicted Car Purchase Amount: $58,540.30
+
+**How to run the project**
+
+**1. Clone the repository**
+
+git clone https://github.com/Mazid2003/car-sales-prediction-a-Data-Science-project.git
+
+cd car_sales
+
+**2. Install requirements**
+
+pip install -r requirements.txt
+
+**3. Run the Flask app**
+
+python app.py
+
+Then open your browser at http://127.0.0.1:5000/
 
 **🚀 Future Enhancements**
 
