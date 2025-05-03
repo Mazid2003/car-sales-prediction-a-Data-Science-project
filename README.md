@@ -92,8 +92,8 @@ Then open your browser at http://127.0.0.1:5000/
 **Screenshots**
 
 ![screenshot_2025-04-30_19-42-36](https://github.com/user-attachments/assets/1ef879a8-735a-4439-8b4a-2278d1220830)
-![screenshot_2025-04-30_19-45-17](https://github.com/user-attachments/assets/b1311d3f-52ee-4ce7-844f-40163a072af2)
 ![screenshot_2025-04-30_19-44-48](https://github.com/user-attachments/assets/bfd5e4b2-e468-4f02-912c-c04b9d106606)
+![screenshot_2025-04-30_19-45-17](https://github.com/user-attachments/assets/b1311d3f-52ee-4ce7-844f-40163a072af2)
 
 **🚀 Future Enhancements**
 
