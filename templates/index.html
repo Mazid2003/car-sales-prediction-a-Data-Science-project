@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Purchase Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(0,0,0,0.1);
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 700px;
+            animation: slideUp 0.6s ease-out;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 1 1 45%;
+           
+        }
+
+
+        .column:first-child {
+    margin-right: 20px;
+}
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1.5px solid #ccc;
+            border-radius: 8px;
+            transition: all 0.25s ease;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            border-color: #2193b0;
+            transform: scale(1.02);
+            box-shadow: 0 0 6px rgba(33, 147, 176, 0.3);
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: #017896;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #176B87;
+            transform: scale(1.04);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color:  #333;
+            font-weight: bold;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(25px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Predict Car Purchase Amount</h1>
+        <form method="POST">
+            <div class="column">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <select name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="USA">USA</option>
+                </select>
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="column">
+                <input type="number" name="age" placeholder="Age" step="0.1" required>
+                <input type="number" name="salary" placeholder="Salary" step="0.1" required>
+                <input type="number" name="debt" placeholder="Debt" step="0.1" required>
+                <input type="number" name="net" placeholder="Net Worth" step="0.1" required>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            🚗 Predicted Car Purchase Amount: ${{ prediction }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
