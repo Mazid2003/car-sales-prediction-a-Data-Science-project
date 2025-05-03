@@ -134,6 +134,7 @@ Passionate about AI, Web Development, and Problem Solving
 **📬 Contact**
 
 Email:mazidmd750@gmail.com
+
 Linkedin: https://www.linkedin.com/in/mohammadmazid
 
 
