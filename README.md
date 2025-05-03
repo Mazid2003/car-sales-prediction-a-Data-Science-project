@@ -115,11 +115,13 @@ HTML, CSS
 
 Joblib
 
-**📦 Requirements**
+**💬 Want to Collaborate?**
 
-Install dependencies using:
+Feel free to fork the repo, submit PRs, and give your feedback! 🔥💡
 
-pip install -r requirements.txt
+**📜 License**
+
+This project is open-source under the MIT License. Feel free to use and modify it! 🚀
 
 **💼 Author**
 
@@ -128,5 +130,12 @@ Mohammad Mazid
 B.Tech in Artificial Intelligence and Data Science
 
 Passionate about AI, Web Development, and Problem Solving
+
+**📬 Contact**
+
+Email:mazidmd750@gmail.com
+Linkedin: https://www.linkedin.com/in/mohammadmazid
+
+
 
 
